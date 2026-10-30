@@ -29,8 +29,61 @@
   .gradient-brand {
     background: linear-gradient(135deg, #bd9ee1 0%, #8f5cc4 100%);
   }
-  
-  .gradient-hero {
-    background: linear-gradient(135deg, #f5f0fb 0%, #ede3f7 50%, #d9c4ef 100%);
+
+  .gradient-dark {
+    background: linear-gradient(135deg, #1a1033 0%, #2d1b4e 50%, #3d2158 100%);
+  }
+
+  .gradient-mesh {
+    background: 
+      radial-gradient(at 20% 30%, rgba(189, 158, 225, 0.3) 0px, transparent 50%),
+      radial-gradient(at 80% 20%, rgba(143, 92, 196, 0.2) 0px, transparent 50%),
+      radial-gradient(at 50% 80%, rgba(168, 125, 214, 0.25) 0px, transparent 50%);
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #bd9ee1 0%, #e8d5f5 50%, #bd9ee1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bento-card {
+    transition: all 0.3s ease;
+  }
+
+  .bento-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -12px rgba(189, 158, 225, 0.25);
+  }
+
+  .floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .pulse-ring {
+    animation: pulse-ring 2s ease-out infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% { transform: scale(0.8); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
   }
 }
