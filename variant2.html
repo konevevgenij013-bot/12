@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Налоги просто — бухгалтерское обслуживание для микро и малого бизнеса. Вариант сайта №2 по мотивам moedelo.org." />
+    <meta name="theme-color" content="#BD9EE1" />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Налоги просто — бухгалтерия для малого бизнеса (вариант 2)</title>
+    <style>
+      html.light, html.light body { background-color: #ffffff !important; color: #272E35; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import React from 'react';
+      import ReactDOM from 'react-dom/client';
+      import '/src/index.css';
+      import App from '/src/App2.tsx';
+
+      document.documentElement.classList.add('light');
+      ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
+    </script>
+  </body>
+</html>
